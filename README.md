@@ -2,6 +2,8 @@
 
 Ce dépot contient uniquement les fichiers apk officiels de l'application Arrivora
 
+Lien de téléchargement : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v1.0.0
+
 # Arrivora
 
 Optimisez vos livraisons, gagnez du temps.
