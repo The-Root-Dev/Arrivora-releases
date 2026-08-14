@@ -2,7 +2,7 @@
 
 Ce dépot contient uniquement les fichiers apk officiels de l'application Arrivora
 
-Lien de téléchargement : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v1.0.0
+Lien de téléchargement : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v2.0.0
 
 # Arrivora
 
@@ -24,7 +24,7 @@ Arrivora simplifie ce processus en proposant un ordre de visite plus efficace po
 
 # Fonctionnalités actuelles
 
-- Ajout d'un point de départ depuis Google Maps
+- Détéction automatique du points de départ
 - Ajout de plusieurs destinations clients
 - Optimisation automatique de l'ordre des arrêts
 - Génération d'un itinéraire complet dans Google Maps
@@ -35,17 +35,7 @@ Arrivora simplifie ce processus en proposant un ordre de visite plus efficace po
 
 # Comment utiliser Arrivora ?
 
-1. Ajouter votre départ
-
-1. Ouvrez Google Maps.
-2. Appuyez sur le point bleu représentant votre position actuelle.
-3. Sélectionnez Partager cette localisation.
-4. Copiez le lien.
-5. Collez-le dans le champ Départ dans Arrivora.
-
----
-
-2. Ajouter les destinations clients
+1. Ajouter les destinations clients
 
 Si un client vous envoie sa position :
 
@@ -80,7 +70,7 @@ Après avoir ajouté votre départ et vos destinations :
 
 Téléchargez la dernière version depuis la section Releases :
 
- Releases : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v1.0.0
+ Releases : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v2.0.0
 
 ---
 
@@ -90,7 +80,7 @@ Arrivora est actuellement en développement.
 
 Version actuelle :
 
-v1.0.0-beta
+v2.0.0-beta
 
 Cette version contient les fonctionnalités principales d'optimisation de tournée.
 
