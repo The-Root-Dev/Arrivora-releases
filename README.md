@@ -35,7 +35,7 @@ Arrivora simplifie ce processus en proposant un ordre de visite plus efficace po
 
 # Comment utiliser Arrivora ?
 
-1. Ajouter les destinations clients
+## Ajouter les destinations clients
 
 Si un client vous envoie sa position :
 
