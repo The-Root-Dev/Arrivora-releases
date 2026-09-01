@@ -2,7 +2,7 @@
 
 Ce dépot contient uniquement les fichiers apk officiels de l'application Arrivora
 
-Lien de téléchargement : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v2.0.0
+Lien de téléchargement (Dernière version) : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/2.1.0
 
 # Arrivora
 
