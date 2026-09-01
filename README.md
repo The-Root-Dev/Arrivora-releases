@@ -70,7 +70,7 @@ Après avoir ajouté votre départ et vos destinations :
 
 Téléchargez la dernière version depuis la section Releases :
 
- Releases : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/v2.0.0
+ Releases : https://github.com/The-Root-Dev/Arrivora-releases/releases/tag/2.1.0
 
 ---
 
@@ -80,7 +80,7 @@ Arrivora est actuellement en développement.
 
 Version actuelle :
 
-v2.0.0-beta
+v2.1.0-beta
 
 Cette version contient les fonctionnalités principales d'optimisation de tournée.
 
