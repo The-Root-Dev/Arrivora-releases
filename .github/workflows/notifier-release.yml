@@ -20,16 +20,39 @@ jobs:
         run: |
           set -euo pipefail
 
+          if [ -z "$API_URL" ]; then
+            echo "Le secret API_URL est manquant."
+            exit 1
+          fi
+
+          if [ -z "$NOTIFICATION_API_TOKEN" ]; then
+            echo "Le secret NOTIFICATION_API_TOKEN est manquant."
+            exit 1
+          fi
+
           payload=$(jq -n \
             --arg version "$RELEASE_VERSION" \
             --arg url "$RELEASE_URL" \
             '{version: $version, url: $url}')
 
-          response=$(curl --fail-with-body --silent --show-error \
+          response_file=$(mktemp)
+          http_status=$(curl --silent --show-error \
             --request POST \
             "${API_URL%/}/envoyer-notification-version" \
             --header "Content-Type: application/json" \
             --header "X-Notification-Token: $NOTIFICATION_API_TOKEN" \
-            --data "$payload")
+            --data "$payload" \
+            --output "$response_file" \
+            --write-out '%{http_code}')
 
-          echo "$response"
+          echo "Réponse du backend (HTTP $http_status) :"
+          cat "$response_file"
+
+          if [ "$http_status" -lt 200 ] || [ "$http_status" -ge 300 ]; then
+            exit 1
+          fi
+
+          if ! jq -e '.envoyee == true' "$response_file" >/dev/null; then
+            echo "Le backend n'a pas confirmé l'envoi de la notification."
+            exit 1
+          fi
